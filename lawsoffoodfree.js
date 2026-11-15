@@ -10,16 +10,16 @@ func:function()
 
 	new G.Policy({
 		name:'eat herbs',
-		desc:'[herb,Herbs] are now food items.',
+		desc:'[herbs,Herbs] are now food items.',
 		icon:[6,12,4,6,'iconSheet'],
 		cost:{'influence':0},
 		startMode:'on',
 		req:{'rules of food':true},
 		effects:[
-			{type:'make part of',what:['herb'],parent:'food'},
+			{type:'make part of',what:['herbs'],parent:'food'},
 		],
 		effectsOff:[
-			{type:'make part of',what:['herb'],parent:''},
+			{type:'make part of',what:['herbs'],parent:''},
 		],
 		category:'food',
 	});
